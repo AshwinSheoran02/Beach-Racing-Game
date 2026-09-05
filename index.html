@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Game Astra · Suncoast Sprint</title>
+  </head>
+  <body>
+    <canvas id="game"></canvas>
+    <div id="hud" hidden>
+      <div class="top">
+        <div class="position">
+          <b id="position">6</b><span>/ 6<br />POSITION</span>
+        </div>
+        <div class="lap">
+          <small>SUNCOAST SPRINT</small><strong id="lap">LAP 1 / 3</strong>
+        </div>
+        <div class="timing">
+          <span>RACE <b id="time">00:00.00</b></span
+          ><span>LAP <b id="lapTime">00:00.00</b></span
+          ><span>BEST <b id="best">—</b></span>
+        </div>
+      </div>
+      <div id="notice"></div>
+      <canvas id="map" width="220" height="190"></canvas>
+      <div class="speed">
+        <b id="speed">0</b><span>KM/H</span>
+        <div id="speedbar"></div>
+        <small id="surface">BEACH SAND</small>
+      </div>
+      <div class="hint">
+        WASD / ARROWS · DRIVE　 SPACE · DRIFT　 R · RECOVER　 ESC · PAUSE
+      </div>
+    </div>
+    <div id="count"></div>
+    <div id="title" class="overlay">
+      <div class="intro">
+        <div class="eyebrow">GAME ASTRA / VOL. 01</div>
+        <h1>SUNCOAST<br /><em>SPRINT</em><span>☀</span></h1>
+        <p>
+          Salt in the air. Sand in your wake.<br />Six racers. Three laps. One
+          perfect summer.
+        </p>
+        <button id="play">LET’S RACE <span>↗</span></button>
+        <div class="controls">
+          <span><kbd>W A S D</kbd> DRIVE</span
+          ><span><kbd>SPACE</kbd> DRIFT</span><span><kbd>R</kbd> RECOVER</span>
+        </div>
+      </div>
+      <div class="tag">TROPICAL ARCADE RACING <b>03 LAPS / 06 RACERS</b></div>
+    </div>
+    <div id="pause" class="overlay center" hidden>
+      <div class="panel">
+        <div class="eyebrow">TAKE A BREATHER</div>
+        <h2>Beach break.</h2>
+        <button id="resume">BACK TO RACING</button
+        ><button class="secondary" id="restart">RESTART RACE</button>
+      </div>
+    </div>
+    <div id="results" class="overlay center" hidden>
+      <div class="panel results">
+        <div class="eyebrow">SUNCOAST SPRINT · RACE COMPLETE</div>
+        <h2 id="resultTitle">What a ride.</h2>
+        <p id="summary"></p>
+        <div id="standings"></div>
+        <button id="again">RACE AGAIN ↗</button>
+      </div>
+    </div>
+    <button id="sound" aria-label="Toggle sound">SOUND ON</button>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
