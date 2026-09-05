@@ -4,6 +4,8 @@
 
 A complete desktop-browser tropical arcade racer made with Three.js, TypeScript and Vite. All scenery, cars, particles and sound are generated locally; no external art, fonts or audio services are required.
 
+link for the Game: https://beach-racing-game.vercel.app/ 
+
 ## Screenshots
 
 ![Racing along the tropical shoreline](docs/images/beach-racing.png)
